@@ -1,0 +1,13 @@
+body {
+    background-image: url('bg.jpg');
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+    text-shadow: 3px 3px salmon;
+}
+
+#word-three {
+    background: #6E6174;
+    color: #757265;
+    display: none;
+}

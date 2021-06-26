@@ -1,0 +1,5 @@
+During the engineering design process, many issues are often brought up by the team members in regards to the design. There are usually issues with every design, and bringing up these issues are beneficial as it helps us improve and learn from our mistakes about what was wrong with our design. It is important that issues are identified and resolved within a timely manner during the engineering design process as leaving issues unresolved could bring around bigger issues down the track.
+
+For example, we did have quite a few issues with the main chassis of the robot. The initial builds did not feel stable enough as they were quite shaky. We noted down that we needed to make our robot more rigid otherwise our robot would break apart due to the large collisions during the competition. We noted this down in our meeting minutes to be addressed at the next group meeting. At the next group meeting, we then followed up on the issues and devise strategies to resolve it.
+
+Another issue we had with the chassis was that we initially didn’t know where to place the sensors.

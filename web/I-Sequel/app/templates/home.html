@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %}
+<section class="hero is-fullheight is-info">
+  <div class="body">
+    <div class="container">
+			<h2 class="subtitle"><u>Find your favorite sequel!</u></h2>
+      <form id='myform'>
+        <input class="input" id='form-name' name="name" placeholder="Search for a movie..." />
+        <input
+          name="searchToken"
+          hidden
+          value="22576520646566696e6974656c79206e65656420746869732c20492074656c6c20796122202d2054686520616e616c797469637320677579"
+        />
+        <button class="is-primary"  onClick='submit'>Search!</button>
+      </form>
+
+      <hr>
+
+      <div id='error-box' style="display: none;" class="alert alert-danger alert-dismissible fade show">
+        <span id='error-p'></span>
+      </div>
+        <ol id='res-list'>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const form = document.querySelector('form')
+  form.addEventListener('submit', e => submit(e))
+  function submit(e) {
+    e.preventDefault()
+    req = {};
+    const form = document.querySelector('form')
+    for (const ele of form.querySelectorAll('input')) {
+      req[ele.name] = ele.value;
+    }
+
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(req)
+    }).then(res => res.json()).then((r) => {
+      var resList = document.getElementById('res-list')
+      resList.innerHTML = ''
+      errBox = document.getElementById('error-box')
+      for (const i of r) {
+        if (i.err) {
+          document.getElementById('error-p').innerText = i.err
+          errBox.style = 'display: block;'
+          break;
+        }
+        errBox.style = 'display: none;'
+        li = document.createElement('li')
+        li.innerText = i.name
+        resList.appendChild(li)
+      }
+
+      document.getElementById('form-name').blur()
+    });
+  }
+</script>
+{% endblock %}
