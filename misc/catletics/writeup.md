@@ -1,7 +1,5 @@
 # catletics
 
-Writeup coming soon!
-
 ## Authors
 - @abiramen, heavily inspired by a CTF challenge from @lecafard in 2020.
 
@@ -27,6 +25,9 @@ I think it's an effective learning tool! I really hope none of my students know 
 - Classic intro to pwntools maths challenge.
 
 ### Walkthrough
+
+Walkthrough by @razin99.
+   
 Solving random maths challenge within 10 seconds, you have to be either a
 genius, or an entity that is capable of writing a script. Continue reading if
 you identify with the latter.
