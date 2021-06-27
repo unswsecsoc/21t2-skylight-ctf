@@ -30,8 +30,8 @@ Try include a link to the file where possible (such as within a repo).
 
 ## Solution
 
-<!-- <details>
-<summary>Spoiler</summary> -->
+<details>
+<summary>Spoiler</summary>
 
 ### Idea
 

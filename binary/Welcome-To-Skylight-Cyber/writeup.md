@@ -2,7 +2,6 @@
 
 ## Authors
 - @jame
-- @Sequeli 
 
 ## Category
 - Binary Exploitation
