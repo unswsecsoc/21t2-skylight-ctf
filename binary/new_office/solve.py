@@ -1,10 +1,9 @@
 from pwn import *
 
-#context.log_level = "debug"
 remote_conn = False
 
-IP = ""
-PORT = ""
+IP = "pwn.ctf.unswsecurity.com"
+PORT = "5001"
 FILENAME = "./_ctfd/files/new_office"
 
 
